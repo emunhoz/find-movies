@@ -37,6 +37,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@commons/eslint-config": "*",
     "@commons/stylelint-config": "*",
+    "@commons/images": "*",
     "typescript": "^4.1.3"
   },
   "config": {
