@@ -3,8 +3,9 @@ import * as S from './Button.style'
 
 interface IButton {
   children?: React.ReactNode
+  icon?: React.ReactNode
   onClick?: () => void
-  disabled?: boolean;
+  disabled?: boolean
   /**
    * Styles button as 100% width
    *
@@ -12,31 +13,16 @@ interface IButton {
    */
   block?: boolean
   /**
-   * Defines the size of the button
-   *  big: 66px
-   *  small: 32px
-   *
-   * @default default
-   */
-  size?: 'big' | 'default' | 'small';
-
-  /**
-   * Styles button as negative style
+   * Styles button with background active style
    *
    * @default false
    */
-  negative?: boolean
-
-  /**
-   * Styles button as ghost style
-   *
-   * @default false
-   */
-  ghost?: boolean
+  active?: boolean
 }
 
-export const Button = ({ children, disabled, size = 'default', onClick, block = false, negative = false, ghost = false, ...rest }: IButton) => (
-  <S.Button onClick={onClick} block={block} size={size} disabled={disabled} negative={negative} ghost={ghost} {...rest}>
+export const Button = ({ children, icon, disabled, onClick, block = false, active = false, ...rest }: IButton) => (
+  <S.Button onClick={onClick} block={block} active={active} {...rest}>
+    {icon}
     {children}
   </S.Button>
 )
