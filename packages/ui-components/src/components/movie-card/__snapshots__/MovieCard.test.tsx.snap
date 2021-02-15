@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component]: MovieCard render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-iBPRYJ jNWBPR"
+    data-testid="movie-card"
+  >
+    <img
+      alt="Lorem"
+      class="sc-dlfnbm cvkeWK"
+      src=""
+    />
+    <div
+      class="sc-gKsewC eQJKVr"
+    >
+      <div
+        class="sc-hKgILt cfYQtU"
+      >
+        <test-file-stub
+          classname="sc-bdfBwQ kamaMm"
+          data-testid="set-as-fav"
+        />
+      </div>
+      <div
+        class="sc-gsTCUz"
+      >
+        <h2
+          class="sc-eCssSg drdQJI"
+        >
+          Lorem
+        </h2>
+        <div
+          class="sc-jSgupP cPrTxs"
+        >
+          2020
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`[Component]: MovieCard render the component active with image 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-iBPRYJ jNWBPR"
+    data-testid="movie-card"
+  >
+    <img
+      alt="Lorem"
+      class="sc-dlfnbm cvkeWK"
+      src="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg"
+    />
+    <div
+      class="sc-gKsewC gHYjPT"
+    >
+      <div
+        class="sc-hKgILt cfYQtU"
+      >
+        <test-file-stub
+          classname="sc-bdfBwQ kamaMm"
+          data-testid="set-as-fav"
+        />
+      </div>
+      <div
+        class="sc-gsTCUz"
+      >
+        <h2
+          class="sc-eCssSg drdQJI"
+        >
+          Lorem
+        </h2>
+        <div
+          class="sc-jSgupP cPrTxs"
+        >
+          2020
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
