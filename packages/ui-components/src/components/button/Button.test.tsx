@@ -6,31 +6,19 @@ describe('[Component]: Button', () => {
   const mockOnClickFunction = jest.fn()
 
   test('render the component', () => {
-    const { asFragment } = render(<Button onClick={mockOnClickFunction}>Hello world</Button>)
+    const { asFragment } = render(<Button>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })
 
-  test('render negative style', () => {
-    const { asFragment } = render(<Button negative onClick={mockOnClickFunction}>Hello world</Button>)
+  test('render active style', () => {
+    const { asFragment } = render(<Button active>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })
 
-  test('render ghost style', () => {
-    const { asFragment } = render(<Button ghost onClick={mockOnClickFunction}>Hello world</Button>)
-
-    expect(asFragment()).toMatchSnapshot()
-  })
-
-  test('render component with small size style', () => {
-    const { asFragment } = render(<Button size="small" onClick={mockOnClickFunction}>Hello world</Button>)
-
-    expect(asFragment()).toMatchSnapshot()
-  })
-
-  test('render component with big size style', () => {
-    const { asFragment } = render(<Button size="big" onClick={mockOnClickFunction}>Hello world</Button>)
+  test('render block style', () => {
+    const { asFragment } = render(<Button block>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })
@@ -44,7 +32,7 @@ describe('[Component]: Button', () => {
   })
 
   test('render component disabled', () => {
-    const { asFragment } = render(<Button disabled onClick={mockOnClickFunction}>Hello world</Button>)
+    const { asFragment } = render(<Button disabled>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })

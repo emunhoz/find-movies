@@ -5,60 +5,57 @@ const BlockStyle = css`
   width: 100%;
 `
 
-const NegativeStyle = css`
-  color: ${({ theme }) => theme.palette.darkest};
-  background: ${({ theme }) => theme.palette.lightest};
-  border: 2px solid ${({ theme }) => theme.palette.darkest};
+const ActiveStyle = css`
+  color: ${({ theme }) => theme.palette.white};
+  background: ${({ theme }) => theme.palette.secondary};
+  border: 1px solid ${({ theme }) => theme.palette.secondary};
+  
+  svg {
+    opacity: 1;
+  }
+
   :hover {
-    color: ${({ theme }) => theme.palette.lightest};
-    background: ${({ theme }) => theme.palette.darkest};
+    opacity: .9;
+  }
+
+  path:last-child {
+    fill: ${({ theme }) => theme.palette.white};
   }
 `
 
-const GhostStyle = css`
-  color: ${({ theme }) => theme.palette.darkest};
-  background: ${({ theme }) => theme.palette.lightest};
-  :hover {
-    color: ${({ theme }) => theme.palette.lightest};
-    background: ${({ theme }) => theme.palette.darkest};
-  }
-`
-
-const SmallStyle = css`
-  padding: 12px 40px;
-  font-size: ${({ theme }) => theme.typography.size.s1}px;
-`
-
-const BigStyle = css`
-  padding: 24px 40px;
-  font-size: ${({ theme }) => theme.typography.size.s3}px;
-`
-
-export const Button = styled.button<{ negative: boolean; ghost: boolean; size: string; block: boolean }>`
-  padding: 18px 40px;
-  font-size: ${({ theme }) => theme.typography.size.s2}px;
-  font-weight: ${({ theme }) => theme.typography.weight.bold};
-  color: ${({ theme }) => theme.palette.lightest};
-  text-transform: uppercase;
-  cursor: pointer;
-  background: ${({ theme }) => theme.palette.darkest};
-  border: none;
+export const Button = styled.button<{ block: boolean; active: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  font-size: ${({ theme }) => theme.typography.size.regular}px;
+  font-weight: ${({ theme }) => theme.typography.weight.medium};
+  color: ${({ theme }) => theme.palette.lightGrey};
+  background: none;
+  border: 1px solid ${({ theme }) => theme.palette.lightGrey};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
-  transition: 0.3s;
 
   :hover {
-    filter: brightness(150%);
+    color: ${({ theme }) => theme.palette.white};
+    cursor: pointer;
+    border: 1px solid ${({ theme }) => theme.palette.secondary};
+
+    svg {
+      opacity: 1;
+    }
   }
 
   :disabled {
     opacity: 0.5;
   }
 
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    opacity: .5;
+  }
+
   ${({ block }) => block && BlockStyle};
-
-  ${({ negative }) => negative && NegativeStyle};
-  ${({ ghost }) => ghost && GhostStyle};
-
-  ${({ size }) => size === 'small' && SmallStyle};
-  ${({ size }) => size === 'big' && BigStyle}
+  ${({ active }) => active && ActiveStyle};
 `

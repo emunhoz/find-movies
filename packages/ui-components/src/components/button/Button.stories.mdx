@@ -1,10 +1,9 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+import { HeartIcon } from '@commons/images'
 
 import { Button, IButton } from './Button.tsx'
 
 <Meta title="Components/Button" component={Button} />
-
-export const Template = (args) => <Button {...args}>Text</Button>
 
 # Button
 
@@ -16,7 +15,7 @@ import { Button } from '@monorepo/ui-components'
 
 <Preview withSource="open">
   <Story name="Primary">
-    <Button>Primary</Button>
+    <Button>Add to favourites</Button>
   </Story>
 </Preview>
 
@@ -24,32 +23,26 @@ import { Button } from '@monorepo/ui-components'
 
 <Props of={Button} />
 
-## Negative
+## Active
 
 <Preview withSource="open">
-  <Story name="Negative">
-    <Button negative>Negative</Button>
+  <Story name="Active">
+    <Button active>Add to favourites</Button>
   </Story>
 </Preview>
 
-## Ghost
+## With Icon
 
 <Preview withSource="open">
-  <Story name="Ghost">
-    <Button ghost>Text</Button>
+  <Story name="WithIcon">
+    <Button icon={<HeartIcon />}>Add to favourites</Button>
   </Story>
 </Preview>
 
-# Sizes
+## Active with Icon
 
 <Preview withSource="open">
-  <Story name="Small">
-    <Button size="small">Text</Button>
-  </Story>
-  <Story name="Default">
-    <Button>Text</Button>
-  </Story>
-  <Story name="Big">
-    <Button size="big">Text</Button>
+  <Story name="ActiveWithIcon">
+    <Button active icon={<HeartIcon />}>Add to favourites</Button>
   </Story>
 </Preview>

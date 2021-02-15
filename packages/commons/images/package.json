@@ -1,0 +1,7 @@
+{
+  "name": "@commons/images",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "types": "global.d.ts",
+  "license": "MIT"
+}
