@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.4.0...@monorepo/ui-components@0.5.0) (2021-02-15)
+
+
+### Features
+
+* add movie card component ([326b9e8](https://github.com/emunhoz/find-movies/commit/326b9e85b8e8d5243c0268ed1898821710aea5f7))
+
+
+
+
+
 # [0.4.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.3.2...@monorepo/ui-components@0.4.0) (2021-02-15)
 
 
