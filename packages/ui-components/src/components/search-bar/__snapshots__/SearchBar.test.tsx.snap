@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component]: SearchBar render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ VfWiw"
+  >
+    <div
+      class="sc-gsTCUz kOXcoc"
+    >
+      <test-file-stub />
+    </div>
+    <input
+      class="sc-dlfnbm jCozXD"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
