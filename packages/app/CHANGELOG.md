@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.4.2...@monorepo/app@0.4.3) (2021-02-15)
+
+**Note:** Version bump only for package @monorepo/app
+
+
+
+
+
 ## [0.4.2](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.4.1...@monorepo/app@0.4.2) (2021-02-15)
 
 **Note:** Version bump only for package @monorepo/app
