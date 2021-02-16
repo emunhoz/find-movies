@@ -1,4 +1,4 @@
-<h1 align="center">Monorepo micro frontend boilerplate</h1>
+<h1 align="center">Find movies</h1>
 
 <p align="center">
   <a href="https://lerna.js.org/">
@@ -28,9 +28,9 @@ This is a monorepo repository using [Lerna](https://lerna.js.org/), [Commitzen](
 
 | Name                           | Description                       |
 | ------------------------------ | --------------------------------- |
-| Storybook                      | [Storybook with components](https://monorepo-boilerplate.vercel.app/?path=/docs/)|
-| Design tokens                  | [Design tokens](https://monorepo-boilerplate.vercel.app/?path=/docs/design-system-colors--page)|
-| Create react app package       | [CRA](https://monorepo-boilerplate-cra.vercel.app/) |
+| Storybook                      | [Storybook with components](https://find-movies-storybook.vercel.app/)|
+| Design tokens                  | [Design tokens](https://find-movies-storybook.vercel.app/?path=/docs/design-system-colors--page)|
+| Create react app package       | [CRA](https://find-movies-app.vercel.app/) |
 
 ## ⚠️ Requirements
 
