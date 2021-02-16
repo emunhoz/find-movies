@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component]: LabelWithLogo render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ"
+  >
+    My new LabelWithLogo component example
+  </div>
+</DocumentFragment>
+`;
