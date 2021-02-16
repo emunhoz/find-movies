@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.5.0...@monorepo/ui-components@0.6.0) (2021-02-16)
+
+
+### Features
+
+* add label with logo component ([ef3d9e1](https://github.com/emunhoz/find-movies/commit/ef3d9e1225a198fcfe7bbeb88b963afc8804dd46))
+
+
+
+
+
 # [0.5.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.4.0...@monorepo/ui-components@0.5.0) (2021-02-15)
 
 
