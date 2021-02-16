@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button negative>Button from @monorepo/ui-components</Button>
+        <Button>Button from @monorepo/ui-components</Button>
       </header>
     </div>
   )
