@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component]: Layout render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ cgOHzx"
+  >
+    <h1>
+      Olá
+    </h1>
+  </div>
+</DocumentFragment>
+`;
