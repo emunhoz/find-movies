@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.4.6...@monorepo/app@0.5.0) (2021-02-17)
+
+
+### Features
+
+* add home page ([a632fe0](https://github.com/emunhoz/find-movies/commit/a632fe048241df80e50cbe0b61f04f06b47af150))
+
+
+
+
+
 ## [0.4.6](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.4.5...@monorepo/app@0.4.6) (2021-02-16)
 
 **Note:** Version bump only for package @monorepo/app

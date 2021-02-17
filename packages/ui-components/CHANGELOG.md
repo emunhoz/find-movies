@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.6.0...@monorepo/ui-components@0.7.0) (2021-02-17)
+
+
+### Features
+
+* add Layout component ([3b59a3d](https://github.com/emunhoz/find-movies/commit/3b59a3d9345cb7d8aa6801bfaa97a8b3b162b435))
+
+
+
+
+
 # [0.6.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.5.0...@monorepo/ui-components@0.6.0) (2021-02-16)
 
 
