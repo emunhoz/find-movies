@@ -1,6 +1,6 @@
 {
   "name": "@monorepo/app",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "private": true,
   "dependencies": {
     "@monorepo/design-tokens": "^0.2.4",
