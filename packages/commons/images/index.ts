@@ -1,7 +1,15 @@
-import HeartIcon from './icons/heart-icon.svg'
+import IconHeart from './icons/icon-heart.svg'
+import IconHeartFull from './icons/icon-heart-full.svg'
+import IconHeartWhite from './icons/icon-heart-white.svg'
 import SearchIcon from './icons/icon-magnifier-white.svg'
+import EmptyState from './illustrations/empty-state.png'
+import Logo from './logos/logo.svg'
 
 export {
-  HeartIcon,
-  SearchIcon
+  IconHeart,
+  IconHeartFull,
+  IconHeartWhite,
+  SearchIcon,
+  EmptyState,
+  Logo
 }
