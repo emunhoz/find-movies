@@ -19,6 +19,7 @@ module.exports = {
     "declaration-block-trailing-semicolon": null,
     "string-quotes": "single",
     "number-leading-zero": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-max-id": 1
   }
 }
