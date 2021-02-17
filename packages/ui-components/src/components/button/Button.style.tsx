@@ -10,7 +10,7 @@ const ActiveStyle = css`
   background: ${({ theme }) => theme.palette.secondary};
   border: 1px solid ${({ theme }) => theme.palette.secondary};
   
-  svg {
+  img {
     opacity: 1;
   }
 
@@ -40,7 +40,7 @@ export const Button = styled.button<{ block: boolean; active: boolean }>`
     cursor: pointer;
     border: 1px solid ${({ theme }) => theme.palette.secondary};
 
-    svg {
+    img {
       opacity: 1;
     }
   }
@@ -49,9 +49,9 @@ export const Button = styled.button<{ block: boolean; active: boolean }>`
     opacity: 0.5;
   }
 
-  svg {
-    width: 24px;
-    height: 24px;
+  img {
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
     opacity: .5;
   }

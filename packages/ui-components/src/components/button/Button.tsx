@@ -3,7 +3,7 @@ import * as S from './Button.style'
 
 interface IButton {
   children?: React.ReactNode
-  icon?: React.ReactNode
+  icon?: string
   onClick?: () => void
   disabled?: boolean
   /**
@@ -22,7 +22,7 @@ interface IButton {
 
 export const Button = ({ children, icon, disabled, onClick, block = false, active = false, ...rest }: IButton) => (
   <S.Button onClick={onClick} block={block} active={active} {...rest}>
-    {icon}
+    {icon && <img src={icon} />}
     {children}
   </S.Button>
 )

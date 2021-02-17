@@ -14,7 +14,7 @@ import { MovieCard } from '@voodoo/ui-components'
 
 <Preview withSource="open">
   <Story name="Primary">
-    <MovieCard title="What we do in the shadows" onClickCard year="2018" imgUrl="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg" />
+    <MovieCard title="What we do in the shadows" onClickCard={() => console.log('Set as favourite')} year="2018" imgUrl="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg" />
   </Story>
 </Preview>
 
@@ -26,6 +26,6 @@ import { MovieCard } from '@voodoo/ui-components'
 
 <Preview withSource="open">
   <Story name="Active Card">
-    <MovieCard active title="What we do in the shadows" onClickCard year="2018" imgUrl="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg" />
+    <MovieCard active title="What we do in the shadows" onClickCard={() => console.log('Remove favourite')} year="2018" imgUrl="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg" />
   </Story>
 </Preview>

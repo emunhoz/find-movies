@@ -8,7 +8,7 @@ interface ISearchBar {
 
 export const SearchBar = ({ placeholder }: ISearchBar) => (
   <S.SearchBar>
-    <S.SearchIcon><SearchIcon/></S.SearchIcon>
+    <S.SearchIcon><img src={SearchIcon} alt="" /></S.SearchIcon>
     <S.Input type="text" placeholder={placeholder} />
   </S.SearchBar>
 )

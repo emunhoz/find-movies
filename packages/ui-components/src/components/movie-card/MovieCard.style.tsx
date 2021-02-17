@@ -1,11 +1,6 @@
 import styled, { css } from 'styled-components'
-import { HeartIcon } from '@commons/images'
 
-export const HeartIconSVG = styled(HeartIcon)`
-  width: 24px;
-  height: 24px;
-  box-shadow: 0 0 25px -10px #000;
-`
+export const HeartIconSVG = styled.img``
 
 export const DetailLayerWrapper = styled.div``
 

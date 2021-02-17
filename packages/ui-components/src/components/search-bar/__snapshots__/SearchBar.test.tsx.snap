@@ -6,12 +6,15 @@ exports[`[Component]: SearchBar render the component 1`] = `
     class="sc-bdfBwQ VfWiw"
   >
     <div
-      class="sc-gsTCUz kOXcoc"
+      class="sc-gsTCUz hajpva"
     >
-      <test-file-stub />
+      <img
+        alt=""
+        src="test-file-stub"
+      />
     </div>
     <input
-      class="sc-dlfnbm jCozXD"
+      class="sc-dlfnbm cNTlMh"
       type="text"
     />
   </div>

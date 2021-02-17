@@ -17,9 +17,11 @@ exports[`[Component]: MovieCard render the component 1`] = `
       <div
         class="sc-hKgILt cfYQtU"
       >
-        <test-file-stub
-          classname="sc-bdfBwQ kamaMm"
+        <img
           data-testid="set-as-fav"
+          height="24"
+          src="test-file-stub"
+          width="24"
         />
       </div>
       <div
@@ -58,9 +60,11 @@ exports[`[Component]: MovieCard render the component active with image 1`] = `
       <div
         class="sc-hKgILt cfYQtU"
       >
-        <test-file-stub
-          classname="sc-bdfBwQ kamaMm"
+        <img
           data-testid="set-as-fav"
+          height="24"
+          src="test-file-stub"
+          width="24"
         />
       </div>
       <div

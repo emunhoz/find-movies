@@ -1,5 +1,5 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
-import { HeartIcon } from '@commons/images'
+import { IconHeartWhite, IconHeartFull } from '@commons/images'
 
 import { Button, IButton } from './Button.tsx'
 
@@ -35,7 +35,7 @@ import { Button } from '@monorepo/ui-components'
 
 <Preview withSource="open">
   <Story name="WithIcon">
-    <Button icon={<HeartIcon />}>Add to favourites</Button>
+    <Button icon={IconHeartWhite}>Add to favourites</Button>
   </Story>
 </Preview>
 
@@ -43,6 +43,6 @@ import { Button } from '@monorepo/ui-components'
 
 <Preview withSource="open">
   <Story name="ActiveWithIcon">
-    <Button active icon={<HeartIcon />}>Add to favourites</Button>
+    <Button active icon={IconHeartFull}>Add to favourites</Button>
   </Story>
 </Preview>

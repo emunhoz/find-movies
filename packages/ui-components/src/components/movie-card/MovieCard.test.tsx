@@ -6,7 +6,7 @@ describe('[Component]: MovieCard', () => {
   const mockOnClickFunction = jest.fn()
 
   test('render the component', () => {
-    const { asFragment } = render(<MovieCard onClickCard={mockOnClickFunction} imgUrl="" title="Lorem" year="2020" />)
+    const { asFragment } = render(<MovieCard active={false} onClickCard={mockOnClickFunction} imgUrl="" title="Lorem" year="2020" />)
     expect(asFragment()).toMatchSnapshot()
   })
 
