@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.5.1...@monorepo/app@0.6.0) (2021-02-18)
+
+
+### Features
+
+* add findMoviesByName function ([364fb0c](https://github.com/emunhoz/find-movies/commit/364fb0c3fb56fd9ed00369911a7ea97e0f6a621e))
+* add service to find and render movies ([b656bf2](https://github.com/emunhoz/find-movies/commit/b656bf2839302038f946fae6b9a7d2d4852c87b5))
+* setup axios config in order to make requests ([840f56b](https://github.com/emunhoz/find-movies/commit/840f56bee495ba79fb17ce3b1e47f4f86a166294))
+
+
+
+
+
 ## [0.5.1](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.5.0...@monorepo/app@0.5.1) (2021-02-17)
 
 **Note:** Version bump only for package @monorepo/app

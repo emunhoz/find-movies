@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.7.1...@monorepo/ui-components@0.8.0) (2021-02-18)
+
+
+### Features
+
+* add empty state wrapper component ([f176110](https://github.com/emunhoz/find-movies/commit/f176110695751b6c1bd5cfa5383dfce0292eaa4f))
+* add loading component ([098acf6](https://github.com/emunhoz/find-movies/commit/098acf6fbc4495aa04a2a1877af0b84f0abc26f7))
+
+
+
+
+
 ## [0.7.1](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.7.0...@monorepo/ui-components@0.7.1) (2021-02-17)
 
 **Note:** Version bump only for package @monorepo/ui-components
