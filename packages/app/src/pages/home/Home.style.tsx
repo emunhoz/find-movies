@@ -9,6 +9,10 @@ export const MovieWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
   grid-gap: 2em;
   width: 100%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 `
 
 export const Main = styled.main`
