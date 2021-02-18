@@ -6,6 +6,7 @@
     "@monorepo/design-tokens": "^0.2.5",
     "@monorepo/ui-components": "^0.7.0",
     "axios": "^0.21.1",
+    "axios-case-converter": "^0.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
