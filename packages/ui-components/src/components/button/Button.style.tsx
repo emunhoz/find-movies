@@ -17,10 +17,6 @@ const ActiveStyle = css`
   :hover {
     opacity: .9;
   }
-
-  path:last-child {
-    fill: ${({ theme }) => theme.palette.white};
-  }
 `
 
 export const Button = styled.button<{ block: boolean; active: boolean }>`
