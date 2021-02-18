@@ -65,6 +65,8 @@ export const DetailLayer = styled.div<{ asFav: boolean }>`
 export const MovieCard = styled.div`
   position: relative;
   display: inline-block;
+  width: 100%;
+  height: 230px;
   overflow: hidden;
   color: ${({ theme }) => theme.palette.white};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
