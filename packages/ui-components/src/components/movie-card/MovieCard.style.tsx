@@ -8,6 +8,7 @@ export const Img = styled.img`
   display: flex;
   width: 100%;
   height: 100%;
+  background: ${({ theme }) => theme.palette.midGrey};
 `
 
 export const IconWrapper = styled.div`
@@ -52,8 +53,6 @@ export const DetailLayer = styled.div<{ asFav: boolean }>`
   flex-flow: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
   padding: 12px;
   background: #353f4ce0;
   opacity: 0;
@@ -77,7 +76,7 @@ export const MovieCard = styled.div`
       transform: translateY(0%);
     }
 
-    ${HeartIconSVG} {
+    img {
       cursor: pointer;
     }
   }

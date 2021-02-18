@@ -1,23 +1,24 @@
-import React from 'react'
-import { IconHeartWhite, IconHeartFull } from '@commons/images'
+import React, { useState } from 'react'
+import { IconHeartWhite, IconHeartFull, ImageNotFound } from '@commons/images'
 import * as S from './MovieCard.style'
 
 interface IMovieCard {
   imgUrl?: string
-  active: boolean
   title: string
   year: string
-  onClickCard: () => void
 }
 
-export const MovieCard = ({ active, onClickCard, imgUrl, title, year }: IMovieCard) => {
+export const MovieCard = ({ imgUrl, title, year }: IMovieCard) => {
+  const [active, setActive] = useState(false)
+  const imgCard = imgUrl === 'N/A' ? ImageNotFound : imgUrl
+  const activeImage = active ? IconHeartFull : IconHeartWhite
+
   return (
-    <S.MovieCard data-testid="movie-card">
-      <S.Img src={imgUrl} alt={title} />
+    <S.MovieCard>
+      <S.Img src={imgCard} alt={title} />
       <S.DetailLayer asFav={active!}>
         <S.IconWrapper>
-          {!active && <img src={IconHeartWhite} width="24" height="24" data-testid="set-as-fav" onClick={() => onClickCard()} />}
-          {active && <img src={IconHeartFull} width="24" height="24" data-testid="set-as-fav" onClick={() => onClickCard()} />}
+          <img src={activeImage} width="24" height="24" data-testid="set-as-fav" onClick={() => setActive(!active)} />
         </S.IconWrapper>
         <S.DetailLayerWrapper>
           <S.Title>{title}</S.Title>

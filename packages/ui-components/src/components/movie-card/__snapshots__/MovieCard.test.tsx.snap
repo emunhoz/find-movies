@@ -3,16 +3,15 @@
 exports[`[Component]: MovieCard render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ jNWBPR"
-    data-testid="movie-card"
+    class="sc-iBPRYJ fDcApS"
   >
     <img
       alt="Lorem"
-      class="sc-dlfnbm cvkeWK"
-      src=""
+      class="sc-dlfnbm CUPlz"
+      src="test-file-stub"
     />
     <div
-      class="sc-gKsewC eQJKVr"
+      class="sc-gKsewC pzKZi"
     >
       <div
         class="sc-hKgILt cfYQtU"
@@ -46,16 +45,15 @@ exports[`[Component]: MovieCard render the component 1`] = `
 exports[`[Component]: MovieCard render the component active with image 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ jNWBPR"
-    data-testid="movie-card"
+    class="sc-iBPRYJ fDcApS"
   >
     <img
       alt="Lorem"
-      class="sc-dlfnbm cvkeWK"
+      class="sc-dlfnbm CUPlz"
       src="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg"
     />
     <div
-      class="sc-gKsewC gHYjPT"
+      class="sc-gKsewC pzKZi"
     >
       <div
         class="sc-hKgILt cfYQtU"
