@@ -3,6 +3,7 @@ import { Layout, SearchBar, MovieCard, Loading, EmptyStateWrapper } from '@monor
 import { Logo } from '@commons/images'
 import { findMoviesByName } from '../../services/movies'
 import * as S from './Home.style'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [form, setForm] = useState({ search: "" })
@@ -40,8 +41,10 @@ function Home() {
         {loading && <Loading />}
         {!loading && !error && Object.keys(data).length > 0 && (
           <S.MovieWrapper>
-            {data?.search?.map((item: any, key: string | number | null | undefined) => (
-              <MovieCard key={key} title={item.title} year={item.year} imgUrl={item.poster} />
+            {data?.search?.map((item: { imdbId: string, title: string, year: string, poster: string }, key: string | number | null | undefined) => (
+              <Link to={`/${item.imdbId}`} key={key}>
+                <MovieCard title={item.title} year={item.year} imgUrl={item.poster} />
+              </Link>
             ))}
           </S.MovieWrapper>)}
 
