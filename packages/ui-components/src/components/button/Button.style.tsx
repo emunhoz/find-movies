@@ -19,7 +19,27 @@ const ActiveStyle = css`
   }
 `
 
-export const Button = styled.button<{ block: boolean; active: boolean }>`
+const GhostStyle = css`
+  padding: 0;
+  border: none;
+
+  :hover {
+    border: none;
+  }
+`
+
+const SmallStyle = css`
+  font-size: ${({ theme }) => theme.typography.size.s1}px;
+`
+
+const BigStyle = css`
+  img {
+    width: 24px;
+    height: 24px;
+  }
+`
+
+export const Button = styled.button<{ block: boolean; active: boolean; ghost?: boolean; size: string; }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,4 +74,8 @@ export const Button = styled.button<{ block: boolean; active: boolean }>`
 
   ${({ block }) => block && BlockStyle};
   ${({ active }) => active && ActiveStyle};
+  ${({ ghost }) => ghost && GhostStyle};
+
+  ${({ size }) => size === 'small' && SmallStyle};
+  ${({ size }) => size === 'big' && BigStyle}
 `

@@ -33,13 +33,13 @@ describe('[Component]: Button', () => {
   })
 
   test('render component disabled', () => {
-    const { asFragment } = render(<Button disabled>Hello world</Button>)
+    const { asFragment } = render(<Button size="big" disabled>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })
 
   test('render component with icon', () => {
-    const { asFragment } = render(<Button icon={IconHeartWhite}>Hello world</Button>)
+    const { asFragment } = render(<Button size="small" ghost icon={IconHeartWhite}>Hello world</Button>)
 
     expect(asFragment()).toMatchSnapshot()
   })
