@@ -11,11 +11,10 @@ export const Main = styled.main`
   height: 80vh;
 `
 
-export const EmptyStateWrapper = styled.div`
-  text-align: center;
-`
-
-export const EmptyStateImg = styled.img`
+export const MovieWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
   width: 100%;
   max-width: fit-content;
 `
