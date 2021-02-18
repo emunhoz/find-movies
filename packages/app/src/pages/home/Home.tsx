@@ -38,7 +38,7 @@ function Home() {
       <SearchBar placeholder="Search movies..." labelName="Search" value={form.search} onChange={handleSubmit} />
       <S.Main>
         {loading && <Loading />}
-        {!loading && !error && Object.keys(data).length && (
+        {!loading && !error && Object.keys(data).length > 0 && (
           <S.MovieWrapper>
             {data?.search?.map((item: any, key: string | number | null | undefined) => (
               <MovieCard key={key} title={item.title} year={item.year} imgUrl={item.poster} />

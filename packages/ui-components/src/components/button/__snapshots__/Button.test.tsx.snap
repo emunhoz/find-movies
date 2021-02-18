@@ -3,7 +3,7 @@
 exports[`[Component]: Button render active style 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ eZqLKO"
+    class="sc-bdfBwQ fEuyRd"
   >
     Hello world
   </button>
