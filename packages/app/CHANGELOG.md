@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.7.1...@monorepo/app@0.7.2) (2021-02-19)
+
+
+### Performance Improvements
+
+* add service worker registration ([951c5ec](https://github.com/emunhoz/find-movies/commit/951c5ecd46ca3ba7930df8361e52ff5c0eb4c4ac))
+* generic improvements ([6d4e278](https://github.com/emunhoz/find-movies/commit/6d4e2788e7b605fd97bf6afe6be10fdc028b3384))
+
+
+
+
+
 ## [0.7.1](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.7.0...@monorepo/app@0.7.1) (2021-02-19)
 
 **Note:** Version bump only for package @monorepo/app
