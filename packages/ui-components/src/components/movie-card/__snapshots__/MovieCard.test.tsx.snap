@@ -3,7 +3,7 @@
 exports[`[Component]: MovieCard render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ ecTUjd"
+    class="sc-iBPRYJ cXdPVu"
   >
     <img
       alt="Lorem"
@@ -45,7 +45,7 @@ exports[`[Component]: MovieCard render the component 1`] = `
 exports[`[Component]: MovieCard render the component active with image 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ ecTUjd"
+    class="sc-iBPRYJ cXdPVu"
   >
     <img
       alt="Lorem"

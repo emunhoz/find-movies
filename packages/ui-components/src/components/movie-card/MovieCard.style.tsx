@@ -66,10 +66,14 @@ export const MovieCard = styled.div`
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 230px;
+  height: 100%;
   overflow: hidden;
   color: ${({ theme }) => theme.palette.white};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    height: 230px;
+  }
 
   :hover {
     ${DetailLayer} {
