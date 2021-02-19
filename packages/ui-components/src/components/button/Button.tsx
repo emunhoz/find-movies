@@ -36,7 +36,7 @@ interface IButton {
 
 export const Button = ({ children, icon, disabled, size = 'default', ghost, onClick, block = false, active = false, ...rest }: IButton) => (
   <S.Button onClick={onClick} ghost={ghost} block={block} size={size} active={active} {...rest}>
-    {icon && <img src={icon} />}
+    {icon && <img src={icon} alt="icon" width="24" height="24" />}
     {children}
   </S.Button>
 )

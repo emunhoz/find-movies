@@ -11,6 +11,7 @@ export const LogoWrapper = styled.div<{ backgroundLogo: string }>`
   display: flex;
   align-items: center;
   min-width: 24px;
+  padding: 8px;
   background: ${({ backgroundLogo }) => backgroundLogo || 'none'};
 `
 

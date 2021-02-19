@@ -36,7 +36,10 @@ exports[`[Component]: Button render component with icon 1`] = `
     class="sc-bdfBwQ ijHdHy"
   >
     <img
+      alt="icon"
+      height="24"
       src="test-file-stub"
+      width="24"
     />
     Hello world
   </button>
