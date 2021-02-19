@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/emunhoz/find-movies/compare/@commons/images@0.1.7...@commons/images@0.1.8) (2021-02-19)
+
+
+### Performance Improvements
+
+* improvement empty state image ([83a273c](https://github.com/emunhoz/find-movies/commit/83a273ca61c5c3b87e7b56aa8464817974105b27))
+
+
+
+
+
 ## [0.1.7](https://github.com/emunhoz/find-movies/compare/@commons/images@0.1.6...@commons/images@0.1.7) (2021-02-19)
 
 **Note:** Version bump only for package @commons/images

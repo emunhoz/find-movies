@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.8.5...@monorepo/ui-components@0.8.6) (2021-02-19)
+
+
+### Performance Improvements
+
+* improvement empty state image ([83a273c](https://github.com/emunhoz/find-movies/commit/83a273ca61c5c3b87e7b56aa8464817974105b27))
+
+
+
+
+
 ## [0.8.5](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.8.4...@monorepo/ui-components@0.8.5) (2021-02-19)
 
 
