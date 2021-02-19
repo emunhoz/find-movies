@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/global'
 import createTheme from '@monorepo/design-tokens'
 import Routes from './routes'
+import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,3 +15,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
+
+serviceWorkerRegistration.register();
