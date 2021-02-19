@@ -49,7 +49,7 @@ Install all dependecies with:
   yarn 
 ```
 
-To run the front end application [`@monorepo/cra`](./packages/cra) :
+To run the front end application [`@monorepo/app`](./packages/app) :
 ```bash
   yarn start
 ```
@@ -66,7 +66,7 @@ To run all components with storybook  [`@monorepo/ui-components`](./packages/ui-
 | [`@monorepo/design-tokens`](./packages/design-tokens) | Design tokens (colors, typography, attributes...)                                      |
 | [`@common/**`](./packages/commons)                    | Common functions, images, lints (eslint, stylelint, prettier) and other generics setup |
 | [`@monorepo/ui-components`](./packages/ui-components) | React library components with [stories](https://storybook.js.org/)                     |
-| [`@monorepo/cra`](./packages/cra)                     | Front end application create with create-react-app                                     |
+| [`@monorepo/app`](./packages/app)                     | Front end application create with create-react-app                                     |
 
 ## 🚨 Code standard
 
@@ -85,5 +85,5 @@ To run all components with storybook  [`@monorepo/ui-components`](./packages/ui-
 | `yarn storybook`               | Run storybook doc components      |
 | `yarn watch:tokens`            | Watch design-tokens package       |
 | `yarn watch:components`        | Watch ui-components package       |
-| `yarn build-app`               | Build of front app([`@monorepo/cra`](./packages/cra)) and generate a directory with all assets in the following path: `packages/cra/build`      |
+| `yarn build-app`               | Build of front app([`@monorepo/app`](./packages/app)) and generate a directory with all assets in the following path: `packages/cra/build`      |
 | `yarn build-storybook`         | Build of storybook with components([`@monorepo/ui-components`](./packages/ui-components)) and generate a directory with all assets in the following path: `packages/ui-components/public`      |
