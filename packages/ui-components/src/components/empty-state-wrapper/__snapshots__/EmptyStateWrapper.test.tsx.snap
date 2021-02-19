@@ -7,11 +7,11 @@ exports[`[Component]: EmptyStateWrapper render the component 1`] = `
   >
     <img
       alt="Empty state"
-      class="sc-gsTCUz cSLrGA"
+      class="sc-gsTCUz cVyLar"
       height="200"
       loading="lazy"
       src="test-file-stub"
-      width="400"
+      width="320"
     />
     <h2
       class="sc-dlfnbm jfscyR"

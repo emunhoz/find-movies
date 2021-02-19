@@ -6,7 +6,6 @@ export const EmptyStateWrapper = styled.div`
 
 export const EmptyStateImg = styled.img`
   width: 100%;
-  max-width: fit-content;
 `
 
 export const EmptyStateTitle = styled.h2`

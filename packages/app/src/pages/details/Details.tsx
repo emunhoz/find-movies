@@ -43,7 +43,7 @@ function Details() {
     <Layout>
       <S.Container>
         <S.Logo src={Logo} alt="logo" width="112" height="32" />
-        <S.LinkWrapper to="/"><Button icon={ArrowWhite} ghost size="big"></Button></S.LinkWrapper>
+        <S.LinkWrapper to="/"><Button aria-label="Back to home" icon={ArrowWhite} ghost size="big"></Button></S.LinkWrapper>
         <S.InfoWrapper>
           <S.Details>
             <S.Time>
@@ -56,7 +56,9 @@ function Details() {
               {details?.ratings?.map((item: { source: any | undefined; value: string | undefined }, key: string | number | null | undefined) => (
                 <LabelWithLogo key={key} backgroundLogo={Icons[item.source].background} value={item.value} logo={Icons[item.source].img} />
               ))}
-              <Button active={favourite} onClick={() => setFavourite(!favourite)} icon={favourite ? IconHeartFull : IconHeartWhite}>Add to favourites</Button>
+              <Button active={favourite} onClick={() => setFavourite(!favourite)} icon={favourite ? IconHeartFull : IconHeartWhite}>
+                {favourite ? 'Added' : 'Add to favourites'}
+              </Button>
             </S.LabelWrapper>
             <S.Infos>
               <S.BlockDescription>
@@ -92,7 +94,7 @@ function Details() {
             </S.Infos>
           </S.Details>
           <S.PosterImage>
-            <S.Poster src={details.poster} alt={details.title} />
+            <S.Poster loading="lazy" width="484" height="721" src={details.poster} alt={details.title} />
           </S.PosterImage>
         </S.InfoWrapper>
       </S.Container>

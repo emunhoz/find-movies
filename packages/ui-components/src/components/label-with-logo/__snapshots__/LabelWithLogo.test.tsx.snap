@@ -11,7 +11,8 @@ exports[`[Component]: LabelWithLogo render the component 1`] = `
       <img
         alt="logo"
         class="sc-dlfnbm bdHNoV"
-        width="50"
+        height="20"
+        width="20"
       />
     </div>
     <div
