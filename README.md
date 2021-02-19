@@ -1,5 +1,7 @@
 <h1 align="center">Find movies</h1>
 
+## Demo: [https://find-movies-app.vercel.app/](https://find-movies-app.vercel.app/)
+
 <p align="center">
   <a href="https://lerna.js.org/">
     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Maintained with Lerna" />
@@ -30,7 +32,7 @@ This is a monorepo repository using [Lerna](https://lerna.js.org/), [Commitzen](
 | ------------------------------ | --------------------------------- |
 | Storybook                      | [Storybook with components](https://find-movies-storybook.vercel.app/)|
 | Design tokens                  | [Design tokens](https://find-movies-storybook.vercel.app/?path=/docs/design-system-colors--page)|
-| Create react app package       | [CRA](https://find-movies-app.vercel.app/) |
+| Front end app                  | [Find movies](https://find-movies-app.vercel.app/) |
 
 ## ⚠️ Requirements
 
