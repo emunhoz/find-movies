@@ -3,7 +3,7 @@
 exports[`[Component]: Button render active style 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ brHaNL"
+    class="sc-bdfBwQ xZiga"
   >
     Hello world
   </button>
@@ -13,7 +13,7 @@ exports[`[Component]: Button render active style 1`] = `
 exports[`[Component]: Button render block style 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ GPMFq"
+    class="sc-bdfBwQ hYZbaf"
   >
     Hello world
   </button>
@@ -23,7 +23,7 @@ exports[`[Component]: Button render block style 1`] = `
 exports[`[Component]: Button render component disabled 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ ZvdQP"
+    class="sc-bdfBwQ iUisEq"
   >
     Hello world
   </button>
@@ -33,7 +33,7 @@ exports[`[Component]: Button render component disabled 1`] = `
 exports[`[Component]: Button render component with icon 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ jKoWNj"
+    class="sc-bdfBwQ ijHdHy"
   >
     <img
       src="test-file-stub"
@@ -46,7 +46,7 @@ exports[`[Component]: Button render component with icon 1`] = `
 exports[`[Component]: Button render the component 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bdfBwQ kfyREp"
+    class="sc-bdfBwQ gPPAZc"
   >
     Hello world
   </button>

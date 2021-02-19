@@ -48,7 +48,7 @@ export const Button = styled.button<{ block: boolean; active: boolean; ghost?: b
   font-weight: ${({ theme }) => theme.typography.weight.medium};
   color: ${({ theme }) => theme.palette.lightGrey};
   background: none;
-  border: 1px solid ${({ theme }) => theme.palette.lightGrey};
+  border: 1px solid ${({ theme }) => theme.palette.midGrey};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
 
   :hover {
