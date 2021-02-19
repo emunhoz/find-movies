@@ -6,6 +6,9 @@ import ArrowWhite from './icons/icon-arrow-white.svg'
 import EmptyState from './illustrations/empty-state.png'
 import ImageNotFound from './illustrations/image-not-found.svg'
 import Logo from './logos/logo.svg'
+import LogoImdb from './logos/logo-imdb.svg'
+import LogoRottenTomatoes from './logos/logo-rotten-tomatoes.svg'
+import LogoMetacritic from './logos/logo-metacritic.svg'
 
 export {
   IconHeart,
@@ -15,5 +18,8 @@ export {
   ArrowWhite,
   EmptyState,
   ImageNotFound,
-  Logo
+  Logo,
+  LogoImdb,
+  LogoRottenTomatoes,
+  LogoMetacritic
 }
