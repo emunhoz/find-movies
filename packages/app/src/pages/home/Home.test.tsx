@@ -3,11 +3,9 @@ import { render, screen, fireEvent } from '../../../test-utils'
 import Home from './Home'
 
 describe('[Page]: Home', () => {
-  test('renders home page with empty state', () => {
+  test('shows loading when mount the page', () => {
     render(<Home />)
-
-    const emptyStateMessage = screen.getByText(/Don't know what to search?/i)
-    expect(emptyStateMessage).toBeInTheDocument()
+    expect(screen.getByTestId('loading')).toBeTruthy()
   })
 
   test('show Loading component when user types a word', () => {
