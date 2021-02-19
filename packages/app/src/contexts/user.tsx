@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react'
+import React, { createContext, useState, useContext, useEffect } from 'react'
 
 interface UserContextData {
   favourites: Array<string>
@@ -13,15 +13,29 @@ const UserProvider: React.FC = ({ children }) => {
   const [favourites, setFavourites] = useState<any>([])
   const [search, setSearch] = useState<string>('')
 
+  useEffect(() => {
+    async function loadStorageData() {
+      const storagedUser = localStorage.getItem('@movies:user')
+
+      if (storagedUser) {
+        setFavourites(JSON.parse(storagedUser))
+      }
+    }
+
+    loadStorageData()
+  }, [])
+
   function triggerFavourite(favourite: string) {
     if (favourites.includes(favourite)) {
       const newArray = favourites.filter((e: string) => e !== favourite)
       setFavourites(newArray)
+      localStorage.setItem('@movies:user', JSON.stringify(newArray))
 
       return
     }
 
     setFavourites([...favourites, favourite ])
+    localStorage.setItem('@movies:user', JSON.stringify(favourites))
   }
 
   return (

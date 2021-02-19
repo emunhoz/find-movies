@@ -13,8 +13,6 @@ function Home() {
   const [loading, setloading] = useState(false)
   const { search, setSearch, favourites, triggerFavourite } = useClient()
 
-  console.log(favourites, 'fav')
-
   useEffect(() => {
     getMovies(search || '')
   }, [search])
