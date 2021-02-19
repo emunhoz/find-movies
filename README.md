@@ -1,7 +1,5 @@
 <h1 align="center">Find movies</h1>
 
-## Demo: [https://find-movies-app.vercel.app/](https://find-movies-app.vercel.app/)
-
 <p align="center">
   <a href="https://lerna.js.org/">
     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Maintained with Lerna" />
@@ -13,6 +11,8 @@
 	  <img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" alt="Conventional Commits" />
   </a>
 </p>
+
+## Demo: [https://find-movies-app.vercel.app/](https://find-movies-app.vercel.app/)
 
 ## Getting started
 
