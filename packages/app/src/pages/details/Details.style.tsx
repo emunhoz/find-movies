@@ -13,12 +13,11 @@ export const InfoWrapper = styled.div`
 export const PosterImage = styled.div``
 
 export const Poster = styled.img`
-  min-width: 100%;
-  min-height: 100%;
   border-radius: ${({ theme }) => theme.attributes.borderRadius.default}px;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    height: 660px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    width: 100%;
+    height: auto;
   }
 `
 
