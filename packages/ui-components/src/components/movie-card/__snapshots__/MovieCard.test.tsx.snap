@@ -8,7 +8,10 @@ exports[`[Component]: MovieCard render the component 1`] = `
     <img
       alt="Lorem"
       class="sc-dlfnbm CUPlz"
+      height="230"
+      loading="lazy"
       src="test-file-stub"
+      width="170"
     />
     <div
       class="sc-gKsewC pzKZi"
@@ -19,6 +22,7 @@ exports[`[Component]: MovieCard render the component 1`] = `
         <img
           data-testid="set-as-fav"
           height="24"
+          loading="lazy"
           src="test-file-stub"
           width="24"
         />
@@ -50,7 +54,10 @@ exports[`[Component]: MovieCard render the component active with image 1`] = `
     <img
       alt="Lorem"
       class="sc-dlfnbm CUPlz"
+      height="230"
+      loading="lazy"
       src="https://images-na.ssl-images-amazon.com/images/I/A1IuOyoadxL._AC_SY550_.jpg"
+      width="170"
     />
     <div
       class="sc-gKsewC pzKZi"
@@ -61,6 +68,7 @@ exports[`[Component]: MovieCard render the component active with image 1`] = `
         <img
           data-testid="set-as-fav"
           height="24"
+          loading="lazy"
           src="test-file-stub"
           width="24"
         />

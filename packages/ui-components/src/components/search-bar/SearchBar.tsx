@@ -33,7 +33,7 @@ export interface ISearchBar {
 export const SearchBar = ({ value, placeholder, disabled, labelName, error, message = '', ...rest }: ISearchBar) => (
   <S.SearchBar>
     <S.Label htmlFor={labelName}>{labelName}</S.Label>
-    <S.SearchIcon><img src={SearchIcon} alt="" /></S.SearchIcon>
+    <S.SearchIcon><img width="16" height="24" src={SearchIcon} alt="" /></S.SearchIcon>
     <S.Input type="text" id={labelName} name={labelName} value={value} disabled={disabled} placeholder={placeholder} error={!!error} {...rest} />
   </S.SearchBar>
 )

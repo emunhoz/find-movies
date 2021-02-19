@@ -35,7 +35,7 @@ function Home() {
 
   return (
     <Layout>
-      <S.Logo src={Logo} alt="logo" />
+      <S.Logo src={Logo} alt="logo" width="112" height="32" />
       <SearchBar placeholder="Search movies..." labelName="Search" value={form.search} onChange={handleSubmit} />
       <S.Main>
         {loading && <Loading />}

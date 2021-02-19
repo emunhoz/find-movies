@@ -13,7 +13,9 @@ exports[`[Component]: SearchBar render component with error style 1`] = `
     >
       <img
         alt=""
+        height="24"
         src="test-file-stub"
+        width="16"
       />
     </div>
     <input
@@ -38,7 +40,9 @@ exports[`[Component]: SearchBar render the component 1`] = `
     >
       <img
         alt=""
+        height="24"
         src="test-file-stub"
+        width="16"
       />
     </div>
     <input
