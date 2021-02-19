@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const LabelWithLogo = styled.div`
   display: inline-flex;
   overflow: hidden;
-  border: 1px solid ${({ theme }) => theme.palette.lightGrey};
+  border: 1px solid ${({ theme }) => theme.palette.midGrey};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
 `
 
@@ -15,12 +15,14 @@ export const LogoWrapper = styled.div<{ backgroundLogo: string }>`
 `
 
 export const Logo = styled.img`
-  max-height: 30px;
-  padding: 8px;
+  max-height: 18px;
 `
 
 export const Value = styled.div`
+  display: flex;
+  align-items: center;
   padding: 8px;
   font-size: ${({ theme }) => theme.typography.size.regular}px;
+  font-weight: ${({ theme }) => theme.typography.weight.medium};
   color: ${({ theme }) => theme.palette.white};
 `
