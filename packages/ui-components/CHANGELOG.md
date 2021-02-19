@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.8.4...@monorepo/ui-components@0.8.5) (2021-02-19)
+
+
+### Performance Improvements
+
+* improvement performance ([69c7795](https://github.com/emunhoz/find-movies/commit/69c77959b3ae18bd79b71f54c075e538f5d8ec5f))
+
+
+
+
+
 ## [0.8.4](https://github.com/emunhoz/find-movies/compare/@monorepo/ui-components@0.8.3...@monorepo/ui-components@0.8.4) (2021-02-18)
 
 **Note:** Version bump only for package @monorepo/ui-components

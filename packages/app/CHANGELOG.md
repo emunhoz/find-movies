@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.6.4...@monorepo/app@0.7.0) (2021-02-19)
+
+
+### Features
+
+* add details page ([6f9b559](https://github.com/emunhoz/find-movies/commit/6f9b5595a3f6f1868e2a636e55987316b6328ead))
+
+
+### Performance Improvements
+
+* improvement performance ([69c7795](https://github.com/emunhoz/find-movies/commit/69c77959b3ae18bd79b71f54c075e538f5d8ec5f))
+
+
+
+
+
 ## [0.6.4](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.6.3...@monorepo/app@0.6.4) (2021-02-18)
 
 **Note:** Version bump only for package @monorepo/app

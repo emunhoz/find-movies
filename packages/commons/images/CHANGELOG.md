@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/emunhoz/find-movies/compare/@commons/images@0.1.6...@commons/images@0.1.7) (2021-02-19)
+
+**Note:** Version bump only for package @commons/images
+
+
+
+
+
 ## [0.1.6](https://github.com/emunhoz/find-movies/compare/@commons/images@0.1.5...@commons/images@0.1.6) (2021-02-18)
 
 **Note:** Version bump only for package @commons/images
