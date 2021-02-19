@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { Layout, Button, LabelWithLogo, Loading } from '@monorepo/ui-components'
 import { Logo, ArrowWhite } from '@commons/images'
 import { findMoviesById } from '../../services/movies'
@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 import { IconHeartWhite, IconHeartFull } from '@commons/images'
 import Icons from '../../helpers/icons'
 import * as S from './Details.style'
+import { useClient } from '../../contexts/user'
 
 interface CustomParams {
   id: string
@@ -13,7 +14,7 @@ interface CustomParams {
 
 function Details() {
   const [details, setDetails] = useState<any>({})
-  const [favourite, setFavourite] = useState<boolean>(false)
+  const { favourites, triggerFavourite } = useClient()
   let params = useParams()
 
   const imdbId = params as CustomParams
@@ -34,6 +35,8 @@ function Details() {
   if (!Object.keys(details).length) {
     return <Loading />
   }
+
+  const active = favourites.includes(imdbId.id)
 
   const actors = details?.actors.split(',')
   const genres = details?.genre?.split(',')
@@ -56,8 +59,8 @@ function Details() {
               {details?.ratings?.map((item: { source: any | undefined; value: string | undefined }, key: string | number | null | undefined) => (
                 <LabelWithLogo key={key} backgroundLogo={Icons[item.source].background} value={item.value} logo={Icons[item.source].img} />
               ))}
-              <Button active={favourite} onClick={() => setFavourite(!favourite)} icon={favourite ? IconHeartFull : IconHeartWhite}>
-                {favourite ? 'Added' : 'Add to favourites'}
+              <Button active={active} onClick={() => triggerFavourite(imdbId.id)} icon={active ? IconHeartFull : IconHeartWhite}>
+                {active ? 'Added' : 'Add to favourites'}
               </Button>
             </S.LabelWrapper>
             <S.Infos>

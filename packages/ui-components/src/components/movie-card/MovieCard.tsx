@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { IconHeartWhite, IconHeartFull, ImageNotFound } from '@commons/images'
 import * as S from './MovieCard.style'
 
@@ -6,10 +6,11 @@ interface IMovieCard {
   imgUrl?: string
   title: string
   year: string
+  onClick?: (e: any) => void
+  active?: boolean
 }
 
-export const MovieCard = ({ imgUrl, title, year }: IMovieCard) => {
-  const [active, setActive] = useState(false)
+export const MovieCard = ({ active, imgUrl, title, year, onClick }: IMovieCard) => {
   const imgCard = imgUrl === 'N/A' ? ImageNotFound : imgUrl
   const activeImage = active ? IconHeartFull : IconHeartWhite
 
@@ -18,10 +19,7 @@ export const MovieCard = ({ imgUrl, title, year }: IMovieCard) => {
       <S.Img loading="lazy" src={imgCard} alt={title} width="170" height="230" />
       <S.DetailLayer asFav={active!}>
         <S.IconWrapper>
-          <img loading="lazy" src={activeImage} width="24" height="24" data-testid="set-as-fav" onClick={(e) => {
-            e.preventDefault()
-            setActive(!active)
-          }}/>
+          <img loading="lazy" src={activeImage} width="24" height="24" data-testid="set-as-fav" onClick={onClick}/>
         </S.IconWrapper>
         <S.DetailLayerWrapper>
           <S.Title>{title}</S.Title>
