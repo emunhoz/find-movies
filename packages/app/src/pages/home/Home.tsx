@@ -5,6 +5,7 @@ import { findMoviesByName } from '../../services/movies'
 import * as S from './Home.style'
 import { Link } from 'react-router-dom'
 import { useClient } from '../../contexts/user'
+import useDebounce from '../../hooks/use-debounce'
 
 function Home() {
   const [form, setForm] = useState({ search: "" })
@@ -12,23 +13,17 @@ function Home() {
   const [error, setError] = useState(false)
   const [loading, setloading] = useState(false)
   const { search, setSearch, favourites, triggerFavourite } = useClient()
+  const debouncedSearchTerm = useDebounce(search, 500)
 
   useEffect(() => {
-    getMovies(search || '')
-  }, [search])
+    getMovies(debouncedSearchTerm || '')
+  }, [debouncedSearchTerm])
 
   async function handleSubmit(e: { preventDefault: () => void; target: { value: any } }) {
     e.preventDefault()
 
     setForm({ search: e.target.value })
     setSearch(e.target.value)
-
-    if (e.target.value.length < 3) {
-      setData({})
-      return
-    }
-
-    getMovies(e.target.value)
   }
 
   async function getMovies(value: string) {
