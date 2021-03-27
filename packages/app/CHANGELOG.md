@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.7.2...@monorepo/app@0.8.0) (2021-03-27)
+
+
+### Bug Fixes
+
+* poster image on details page ([12ca91b](https://github.com/emunhoz/find-movies/commit/12ca91b3c1cfa2f69bb5285111537521248392cc))
+
+
+### Features
+
+* add hook with debounce pattern ([c879fad](https://github.com/emunhoz/find-movies/commit/c879fadbd74ebe18cad887215b94c1f95f6e8ace))
+
+
+### Performance Improvements
+
+* generic improvements ([0c9b191](https://github.com/emunhoz/find-movies/commit/0c9b19171a7ee21d2e6ce6cbbc5597626d7518e7))
+
+
+
+
+
 ## [0.7.2](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.7.1...@monorepo/app@0.7.2) (2021-02-19)
 
 
