@@ -2,27 +2,32 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const InfoWrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas:
+    'image'
+    'description';
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    flex-flow: wrap;
+    grid-template-areas: 'description image';
   }
 `
-export const PosterImage = styled.div``
+export const PosterImage = styled.div`
+  grid-area: image;
+`
 
 export const Poster = styled.img`
   border-radius: ${({ theme }) => theme.attributes.borderRadius.default}px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    width: 100%;
+    width: -webkit-fill-available;
     height: auto;
   }
 `
 
 export const Container = styled.div``
 export const Details = styled.div`
+  grid-area: description;
   width: 100%;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
@@ -95,29 +100,20 @@ export const LabelWithDot = styled.div`
 export const MovieTitle = styled.h1`
   margin: 0;
   margin-bottom: 40px;
-  font-size: ${({ theme }) => theme.typography.size.large}px;
+  font-size: ${({ theme }) => theme.typography.size.extraLarge}px;
   color: ${({ theme }) => theme.palette.white};
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    font-size: ${({ theme }) => theme.typography.size.extraLarge}px;
-  }
 `
 
 export const LabelWrapper = styled.div`
-  display: flex;
-  flex-flow: column;
   margin-bottom: 40px;
 
   > div {
+    margin-right: 16px;
     margin-bottom: 16px;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    flex-flow: wrap;
-    > div {
-      margin-right: 16px;
-      margin-bottom: 0;
-    }
+  button {
+    display: inline-flex;
   }
 `
 
@@ -132,9 +128,13 @@ export const BlockDescription = styled.div`
 export const SubTitle = styled.div`
   margin: 0;
   margin-bottom: 10px;
-  font-size: ${({ theme }) => theme.typography.size.regular}px;
+  font-size: ${({ theme }) => theme.typography.size.large}px;
   font-weight: ${({ theme }) => theme.typography.weight.medium};
   color: ${({ theme }) => theme.palette.lightGrey};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    font-size: ${({ theme }) => theme.typography.size.regular}px;
+  }
 `
 
 export const List = styled.ul`
@@ -145,16 +145,26 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin: 0;
-  font-size: ${({ theme }) => theme.typography.size.regular}px;
-  line-height: 24px;
+  font-size: ${({ theme }) => theme.typography.size.medium}px;
+  line-height: 32px;
   color: ${({ theme }) => theme.palette.white};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    font-size: ${({ theme }) => theme.typography.size.regular}px;
+    line-height: 24px;
+  }
 `
 
 export const Text = styled.p`
   margin: 0;
-  font-size: ${({ theme }) => theme.typography.size.regular}px;
-  line-height: 24px;
+  font-size: ${({ theme }) => theme.typography.size.large}px;
+  line-height: 48px;
   color: ${({ theme }) => theme.palette.white};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    font-size: ${({ theme }) => theme.typography.size.regular}px;
+    line-height: 24px;
+  }
 `
 
 export const SubBlock = styled.div`
