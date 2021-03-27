@@ -1,10 +1,10 @@
 {
   "name": "@monorepo/app",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": true,
   "dependencies": {
     "@monorepo/design-tokens": "^0.2.5",
-    "@monorepo/ui-components": "^0.8.8",
+    "@monorepo/ui-components": "^0.8.9",
     "axios": "^0.21.1",
     "axios-case-converter": "^0.7.0",
     "react": "^17.0.1",

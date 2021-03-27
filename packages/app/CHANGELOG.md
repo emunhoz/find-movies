@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.8.0...@monorepo/app@0.8.1) (2021-03-27)
+
+
+### Bug Fixes
+
+* persist favourites when refresh page ([98b30c6](https://github.com/emunhoz/find-movies/commit/98b30c6373ce58e054fa9ee472ededbcbb2dfc3a))
+
+
+
+
+
 # [0.8.0](https://github.com/emunhoz/find-movies/compare/@monorepo/app@0.7.2...@monorepo/app@0.8.0) (2021-03-27)
 
 
