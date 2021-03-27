@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react'
-import { Layout, Button, LabelWithLogo, Loading } from '@monorepo/ui-components'
+import React, { useEffect, useState } from 'react'
+import { Layout, Button, LabelWithLogo, Loading, MovieCard } from '@monorepo/ui-components'
 import { Logo, ArrowWhite } from '@commons/images'
 import { findMoviesById } from '../../services/movies'
 import { useParams } from 'react-router-dom'
@@ -97,7 +97,7 @@ function Details() {
             </S.Infos>
           </S.Details>
           <S.PosterImage>
-            <S.Poster loading="lazy" width="484" height="721" src={details.poster} alt={details.title} />
+            <MovieCard hoverOff title={details.title} year={details.year} imgUrl={details.poster} />
           </S.PosterImage>
         </S.InfoWrapper>
       </S.Container>

@@ -3,16 +3,22 @@
 exports[`[Component]: MovieCard render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ cXdPVu"
+    class="sc-iBPRYJ kFVXCq"
   >
-    <img
-      alt="Lorem"
-      class="sc-dlfnbm CUPlz"
-      height="230"
-      loading="lazy"
-      src="test-file-stub"
-      width="170"
-    />
+    <div
+      class="sc-fubCfw bkOPmg"
+    >
+      <div
+        class="sc-pFZIQ gOxPkL"
+      >
+        :(
+      </div>
+      <p
+        class="sc-jrAGrp fRHTJf"
+      >
+        Image not found
+      </p>
+    </div>
     <div
       class="sc-gKsewC pzKZi"
     >
@@ -49,7 +55,7 @@ exports[`[Component]: MovieCard render the component 1`] = `
 exports[`[Component]: MovieCard render the component active with image 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBPRYJ cXdPVu"
+    class="sc-iBPRYJ kFVXCq"
   >
     <img
       alt="Lorem"

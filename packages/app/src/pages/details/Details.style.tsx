@@ -16,15 +16,6 @@ export const PosterImage = styled.div`
   grid-area: image;
 `
 
-export const Poster = styled.img`
-  border-radius: ${({ theme }) => theme.attributes.borderRadius.default}px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    width: -webkit-fill-available;
-    height: auto;
-  }
-`
-
 export const Container = styled.div``
 export const Details = styled.div`
   grid-area: description;

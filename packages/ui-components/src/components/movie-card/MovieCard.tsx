@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconHeartWhite, IconHeartFull, ImageNotFound } from '@commons/images'
+import { IconHeartWhite, IconHeartFull } from '@commons/images'
 import * as S from './MovieCard.style'
 
 interface IMovieCard {
@@ -8,15 +8,23 @@ interface IMovieCard {
   year: string
   onClick?: (e: any) => void
   active?: boolean
+  hoverOff?: boolean
 }
 
-export const MovieCard = ({ active, imgUrl, title, year, onClick }: IMovieCard) => {
-  const imgCard = imgUrl === 'N/A' ? ImageNotFound : imgUrl
+const ImageNotFound = () => (
+  <S.ImageNotFound>
+    <S.ImageNotFoundIcon>:(</S.ImageNotFoundIcon>
+    <S.ImageNotFoundText>Image not found</S.ImageNotFoundText>
+  </S.ImageNotFound>
+)
+
+export const MovieCard = ({ active, imgUrl, hoverOff, title, year, onClick }: IMovieCard) => {
   const activeImage = active ? IconHeartFull : IconHeartWhite
 
   return (
-    <S.MovieCard>
-      <S.Img loading="lazy" src={imgCard} alt={title} width="170" height="230" />
+    <S.MovieCard hoverOff={hoverOff}>
+      {imgUrl !== 'N/A' && <S.Img loading="lazy" src={imgUrl} alt={title} width="170" height="230" />}
+      {imgUrl === 'N/A' && <ImageNotFound />}
       <S.DetailLayer asFav={active!}>
         <S.IconWrapper>
           <img loading="lazy" src={activeImage} width="24" height="24" data-testid="set-as-fav" onClick={onClick}/>

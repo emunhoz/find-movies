@@ -62,27 +62,51 @@ export const DetailLayer = styled.div<{ asFav: boolean }>`
   ${({ asFav }) => asFav && IconFavActiveStyle};
 `
 
-export const MovieCard = styled.div`
+export const MovieCard = styled.div<{ hoverOff?: boolean }>`
   position: relative;
   display: inline-block;
   width: 100%;
+  min-width: 170px;
   height: 100%;
+  min-height: 246px;
   overflow: hidden;
   color: ${({ theme }) => theme.palette.white};
   border-radius: ${({ theme }) => theme.attributes.borderRadius.small}px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    height: 230px;
+    max-height: 610px;
   }
 
-  :hover {
-    ${DetailLayer} {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  ${({ hoverOff }) => !hoverOff && `
+    :hover {
+      ${DetailLayer} {
+        opacity: 1;
+        transform: translateY(0%);
+      }
 
-    img {
-      cursor: pointer;
+      img {
+        cursor: pointer;
+      }
     }
-  }
+  `}
+`
+
+export const ImageNotFound = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #353f4c;
+`
+
+export const ImageNotFoundIcon = styled.div`
+  font-size: ${({ theme }) => theme.typography.size.large}px;
+`
+
+export const ImageNotFoundText = styled.p`
+  font-size: ${({ theme }) => theme.typography.size.medium}px;
 `
