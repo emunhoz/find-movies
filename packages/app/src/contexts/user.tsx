@@ -14,11 +14,11 @@ const UserProvider: React.FC = ({ children }) => {
   const [search, setSearch] = useState<string>('')
 
   useEffect(() => {
-    async function loadStorageData() {
-      const storagedUser = localStorage.getItem('@movies:user')
-
-      if (storagedUser) {
-        setFavourites(JSON.parse(storagedUser))
+    function loadStorageData() {
+      const item = localStorage.getItem('@movies:user')
+  
+      if (item) {
+        setFavourites(JSON.parse(item))
       }
     }
 
@@ -29,13 +29,13 @@ const UserProvider: React.FC = ({ children }) => {
     if (favourites.includes(favourite)) {
       const newArray = favourites.filter((e: string) => e !== favourite)
       setFavourites(newArray)
-      localStorage.setItem('@movies:user', JSON.stringify(newArray))
+      window.localStorage.setItem('@movies:user', JSON.stringify(newArray))
 
       return
     }
 
     setFavourites([...favourites, favourite ])
-    localStorage.setItem('@movies:user', JSON.stringify(favourites))
+    window.localStorage.setItem('@movies:user', JSON.stringify([...favourites, favourite ]))
   }
 
   return (
