@@ -12,7 +12,7 @@ function Home() {
   const [data, setData] = useState<any>({})
   const [error, setError] = useState(false)
   const [loading, setloading] = useState(false)
-  const { search, setSearch, favourites, triggerFavourite } = useClient()
+  const { search, searchInputValue, favourites, triggerFavourite } = useClient()
   const debouncedSearchTerm = useDebounce(search, 500)
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function Home() {
     e.preventDefault()
 
     setForm({ search: e.target.value })
-    setSearch(e.target.value)
+    searchInputValue(e.target.value)
   }
 
   async function getMovies(value: string) {

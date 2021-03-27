@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react'
 interface UserContextData {
   favourites: Array<string>
   triggerFavourite(favourite: string): void;
-  setSearch(search: string): void;
+  searchInputValue(search: string): void;
   search?: string
 }
 
@@ -14,6 +14,11 @@ const UserProvider: React.FC = ({ children }) => {
   const [search, setSearch] = useState<string>('')
 
   useEffect(() => {
+    // if (search.length > 1) {
+    //   setSearch(search)
+    //   window.localStorage.setItem('@movies:search', search)
+    // }
+
     function loadStorageData() {
       const item = localStorage.getItem('@movies:user')
   
@@ -22,8 +27,24 @@ const UserProvider: React.FC = ({ children }) => {
       }
     }
 
+    function loadSearchInput() {
+      const item = localStorage.getItem('@movies:search')
+
+      console.log(item, 'item')
+  
+      if (item) {
+        setSearch(item)
+      }
+    }
+
     loadStorageData()
-  }, [])
+    loadSearchInput()
+  }, [search])
+
+  function searchInputValue(searchItem: string) {
+    setSearch(searchItem)
+    window.localStorage.setItem('@movies:search', searchItem)
+  }
 
   function triggerFavourite(favourite: string) {
     if (favourites.includes(favourite)) {
@@ -39,7 +60,7 @@ const UserProvider: React.FC = ({ children }) => {
   }
 
   return (
-    <UserContext.Provider value={{ favourites, triggerFavourite, search, setSearch }}>
+    <UserContext.Provider value={{ favourites, triggerFavourite, search, searchInputValue }}>
       {children}
     </UserContext.Provider>
   );
