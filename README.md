@@ -40,6 +40,16 @@ This is a monorepo repository using [Lerna](https://lerna.js.org/), [Commitzen](
  - Yarn
  - Lerna
 
+You'll need to create a `.env` file inside `packages/app` with the value below:
+
+```
+// packages/app/.env
+
+REACT_APP_API_KEY=HERE_YOUR_API_KEY
+```
+
+Link to get your api key: http://www.omdbapi.com/apikey.aspx
+
 ## 🚀 Quick start
 
 In the root folder run following commands _(all the below commands need to run on root folder)_:
