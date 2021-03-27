@@ -3,14 +3,14 @@
 exports[`[Component]: LabelWithLogo render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdfBwQ jnmgUO"
+    class="sc-bdfBwQ fOQtuB"
   >
     <div
-      class="sc-gsTCUz bDUAUI"
+      class="sc-gsTCUz dNqMwI"
     >
       <img
         alt="logo"
-        class="sc-dlfnbm bdHNoV"
+        class="sc-dlfnbm bIJKoG"
         height="20"
         width="20"
       />
