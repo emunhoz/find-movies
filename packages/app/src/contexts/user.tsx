@@ -14,11 +14,6 @@ const UserProvider: React.FC = ({ children }) => {
   const [search, setSearch] = useState<string>('')
 
   useEffect(() => {
-    // if (search.length > 1) {
-    //   setSearch(search)
-    //   window.localStorage.setItem('@movies:search', search)
-    // }
-
     function loadStorageData() {
       const item = localStorage.getItem('@movies:user')
   
@@ -28,9 +23,7 @@ const UserProvider: React.FC = ({ children }) => {
     }
 
     function loadSearchInput() {
-      const item = localStorage.getItem('@movies:search')
-
-      console.log(item, 'item')
+      const item = sessionStorage.getItem('@movies:search')
   
       if (item) {
         setSearch(item)
@@ -43,20 +36,20 @@ const UserProvider: React.FC = ({ children }) => {
 
   function searchInputValue(searchItem: string) {
     setSearch(searchItem)
-    window.localStorage.setItem('@movies:search', searchItem)
+    sessionStorage.setItem('@movies:search', searchItem)
   }
 
   function triggerFavourite(favourite: string) {
     if (favourites.includes(favourite)) {
       const newArray = favourites.filter((e: string) => e !== favourite)
       setFavourites(newArray)
-      window.localStorage.setItem('@movies:user', JSON.stringify(newArray))
+      localStorage.setItem('@movies:user', JSON.stringify(newArray))
 
       return
     }
 
     setFavourites([...favourites, favourite ])
-    window.localStorage.setItem('@movies:user', JSON.stringify([...favourites, favourite ]))
+    localStorage.setItem('@movies:user', JSON.stringify([...favourites, favourite ]))
   }
 
   return (
